@@ -1,146 +1,213 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Registrasi Mahasiswa Baru</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-
-        .registration-form {
-            background-color: #ffffff;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-            width: 100%;
-            max-width: 500px;
-            box-sizing: border-box;
-            margin: 20px;
-        }
-
-        .registration-form h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #333;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 600;
-            color: #555;
-        }
-
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            box-sizing: border-box;
-        }
-
-        .form-group input:focus, .form-group select:focus {
-            border-color: #6a11cb;
-            box-shadow: 0 0 5px rgba(106, 17, 203, 0.5);
-        }
-
-        .form-group select {
-            width: 100%;
-        }
-
-        .form-group input[type="submit"] {
-            background-color: #6a11cb;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-            padding: 15px;
-            font-weight: bold;
-            border-radius: 8px;
-            transition: background-color 0.3s ease;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .form-group input[type="submit"]:hover {
-            background-color: #2575fc;
-        }
-
-        @media (max-width: 600px) {
+    <!DOCTYPE html>
+    <html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Formulir resmi pendaftaran mahasiswa baru ITPLN. Isi data pribadi Anda untuk memulai proses registrasi di kampus unggulan teknologi dan energi.">
+        <meta name="author" content="ITPLN">
+        <meta name="keywords" content="ITPLN, Pendaftaran, Mahasiswa Baru, Energi, Teknik Informatika, Teknik Listrik">
+        <title>Formulir Registrasi Mahasiswa Baru ITPLN</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            /* Global Styles */
             body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+                background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                color: #333;
+            }
+
+            header {
+                background-color: #2563eb;
+                color: #fff;
+                padding: 20px 0;
+                text-align: center;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 28px;
+            }
+
+            header p {
+                margin: 5px 0 0;
+                font-size: 16px;
+            }
+
+            nav {
+                background-color: #1e40af;
+                color: #fff;
+                padding: 10px;
+                text-align: center;
+            }
+
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                margin: 0 10px;
+                font-size: 14px;
+            }
+
+            nav a:hover {
+                text-decoration: underline;
+            }
+
+            .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 padding: 20px;
             }
 
             .registration-form {
-                padding: 20px;
+                background-color: #ffffff;
+                padding: 30px;
+                border-radius: 12px;
+                box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.12), 0px 4px 8px rgba(0, 0, 0, 0.06);
                 width: 100%;
-                max-width: 100%;
+                max-width: 600px;
+                box-sizing: border-box;
             }
 
-            .form-group input, .form-group select, .form-group input[type="submit"] {
-                padding: 10px;
+            .registration-form h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                font-size: 22px;
+                font-weight: 600;
+                color: #1f2937;
             }
-        }
-    </style>
-</head>
-<body>
-    <div class="registration-form">
-        <h2>Form Registrasi Mahasiswa Baru</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="nama">Nama Lengkap:</label>
-                <input type="text" id="nama" name="nama" required>
-            </div>
 
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
+            .form-group {
+                margin-bottom: 20px;
+            }
 
-            <div class="form-group">
-                <label for="no_hp">Nomor Handphone:</label>
-                <input type="tel" id="no_hp" name="no_hp" required>
-            </div>
+            .form-group label {
+                display: block;
+                margin-bottom: 6px;
+                font-size: 14px;
+                font-weight: 500;
+                color: #4b5563;
+            }
 
-            <div class="form-group">
-                <label for="alamat">Alamat:</label>
-                <input type="text" id="alamat" name="alamat" required>
-            </div>
+            .form-group input,
+            .form-group select,
+            .form-group textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #d1d5db;
+                border-radius: 8px;
+                font-size: 14px;
+                color: #1f2937;
+                background-color: #f9fafb;
+                transition: border-color 0.2s ease, box-shadow 0.2s ease;
+            }
 
-            <div class="form-group">
-                <label for="prodi">Program Studi:</label>
-                <select id="prodi" name="prodi" required>
-                    <option value="">-- Pilih Program Studi --</option>
-                    <option value="informatika">Informatika</option>
-                    <option value="sistem_informasi">Sistem Informasi</option>
-                    <option value="teknik_industri">Teknik Industri</option>
-                    <option value="manajemen">Manajemen</option>
-                    <option value="akuntansi">Akuntansi</option>
-                </select>
-            </div>
+            .form-group input:focus,
+            .form-group select:focus,
+            .form-group textarea:focus {
+                border-color: #2563eb;
+                box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.3);
+                outline: none;
+            }
 
-            <div class="form-group">
-                <label for="tgl_lahir">Tanggal Lahir:</label>
-                <input type="date" id="tgl_lahir" name="tgl_lahir" required>
-            </div>
+            .form-group input[type="radio"],
+            .form-group input[type="checkbox"] {
+                width: auto;
+                margin-right: 10px;
+            }
 
-            <div class="form-group">
-                <input type="submit" value="Daftar">
+            .form-group input[type="submit"] {
+                background-color: #2563eb;
+                color: #ffffff;
+                border: none;
+                cursor: pointer;
+                padding: 12px;
+                font-size: 14px;
+                font-weight: 600;
+                border-radius: 8px;
+                transition: background-color 0.2s ease, transform 0.2s ease;
+                text-align: center;
+            }
+
+            .form-group input[type="submit"]:hover {
+                background-color: #1d4ed8;
+            }
+
+            footer {
+                text-align: center;
+                padding: 20px;
+                background-color: #f3f4f6;
+                color: #6b7280;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: 14px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>ITPLN - Institut Teknologi PLN</h1>
+            <p>Formulir Resmi Pendaftaran Mahasiswa Baru</p>
+        </header>
+        <nav>
+            <a href="#about">Tentang Kami</a>
+            <a href="#programs">Program Studi</a>
+            <a href="#contact">Kontak</a>
+        </nav>
+        <div class="container">
+            <div class="registration-form">
+                <h2>Pendaftaran Mahasiswa Baru</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Contoh: nama@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="no_hp">Nomor Handphone:</label>
+                        <input type="tel" id="no_hp" name="no_hp" placeholder="Contoh: 081234567890" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="alamat">Alamat Lengkap:</label>
+                        <textarea id="alamat" name="alamat" rows="3" placeholder="Masukkan alamat lengkap Anda" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="prodi">Program Studi:</label>
+                        <select id="prodi" name="prodi" required>
+                            <option value="">-- Pilih Program Studi --</option>
+                            <option value="teknik_listrik">Teknik Listrik</option>
+                            <option value="teknik_energi_terbarukan">Teknik Energi Terbarukan</option>
+                            <option value="teknik_mekatronika">Teknik Mekatronika</option>
+                            <option value="manajemen_energi">Manajemen Energi</option>
+                            <option value="teknik_informatika">Teknik Informatika</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tgl_lahir">Tanggal Lahir:</label>
+                        <input type="date" id="tgl_lahir" name="tgl_lahir" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <input type="radio" id="laki" name="jenis_kelamin" value="Laki-laki" required>
+                        <label for="laki">Laki-laki</label>
+                        <input type="radio" id="perempuan" name="jenis_kelamin" value="Perempuan" required>
+                        <label for="perempuan">Perempuan</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Daftar Sekarang">
+                    </div>
+                </form>
             </div>
-        </form>
-    </div>
-</body>
-</html>
+        </div>
+        <footer>
+            <p>© 2024 Institut Teknologi PLN (ITPLN). Semua Hak Dilindungi.</p>
+        </footer>
+    </body>
+    </html>
